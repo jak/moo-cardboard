@@ -59,7 +59,7 @@
       );
       controls.noZoom = true;
       controls.noPan = true;
-      controls.autoRotate = false;
+      controls.autoRotate = true;
 
       function setOrientationControls(e) {
         if (!e.alpha) {
@@ -80,7 +80,7 @@
       scene.add(light);
 
       var sphere = new THREE.Mesh(
-        new THREE.SphereGeometry(100, 52, 52),
+        new THREE.SphereGeometry(100, 32, 32),
         new THREE.MeshBasicMaterial({
           map: THREE.ImageUtils.loadTexture('textures/groundfloor.jpg')
         })
